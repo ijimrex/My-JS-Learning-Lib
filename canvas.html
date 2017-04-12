@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+<canvas id='ca' width="200px";height="100px" style="border: 1px solid black"></canvas>
+</div>
+<div>
+    <canvas id="word" width="200px";heoght="100px" style="border: 1px solid black"></canvas>
+</div>
+<div>
+    <canvas id="change" width="200px";heoght="100px" style="border: 1px solid black"></canvas>
+</div>
+
+</body>
+<script>
+    function paintCa() {
+        var cav=document.getElementById('ca')
+        var ctx=cav.getContext('2d')
+        ctx.moveTo(0,0)
+        ctx.lineTo(100,100)
+        ctx.stroke()
+        ctx.beginPath()
+        ctx.arc(100,100,40,0,2*Math.PI);
+        ctx.stroke();
+    }
+    paintCa()
+    function paintWord() {
+        var cav=document.getElementById('word')
+        var ctx=cav.getContext('2d')
+        ctx.font="30px Arial"
+        ctx.fillText('Hello',10,50)
+    }
+    paintWord()
+    function change() {
+        var cav=document.getElementById('change')
+        var ctx=cav.getContext('2d')
+        var gra=ctx.createLinearGradient(0,0,200,50 )
+        gra.addColorStop(0,"red")
+        gra.addColorStop(1,"yellow  ")
+//        gra.addColorStop(2,"white")
+        ctx.fillStyle=gra
+        ctx.fillRect(10,10,180,100)
+    }
+    change()
+</script>
+</html>
