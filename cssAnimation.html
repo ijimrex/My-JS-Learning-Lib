@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .m{
+            width: 100px;
+            height: 100px;
+            color: blue;
+            position: absolute;
+            animation: changeColor 3s;
+            animation-iteration-count:infinite ;
+            -moz-animation: changeColor 3s;
+            -moz-animation-iteration-count: infinite;
+            -webkit-animation: changeColor 3s;
+            -webkit-animation-iteration-count: infinite;
+
+        }
+        @keyframes changeColor {
+            0%{background-color: red;top: 0px;left: 0px}
+            25%{background-color: yellow;top: 100px;left:0px}
+            50%{background-color: blue;top:100px;left: 100px}
+            75%{background-color: green;top:0px;left: 100px}
+            100%{background-color: red;top:0px;left: 0px}
+        }
+        @-moz-keyframes changeColor {
+            0%{background-color: red;top: 0px;left: 0px}
+            25%{background-color: yellow;top: 100px;left:0px}
+            50%{background-color: blue;top:100px;left: 100px}
+            75%{background-color: green;top:0px;left: 100px}
+            100%{background-color: red;top:0px;left: 0px}
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>css Animation</title>
+</head>
+<body>
+<div class="m"></div>
+
+</body>
+</html>
