@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajaxcall</title>
+
+</head>
+<body>
+    <input type="button" id="a">click</input>
+    <div class="show"></div>
+    <script>
+        Access-Control-Allow-Origin
+        var btn=document.getElementById('a')
+        var target=document.getElementsByClassName('show')[0]
+        btn.addEventListener('click',getandshow,true)
+        function getandshow(){
+//            alert('s')
+            if (window.XMLHttpRequest)
+             var xhr=new XMLHttpRequest();
+            else
+                var xhr=new ActiveXObject('Microsoft.XMLHTTP')
+            var url="http://cs-server.usc.edu:27177/indexphp/?keyword=1"
+            xhr.open('GET',url,true)
+            xhr.send()
+            xhr.onreadystatechangge=function(){
+                if(xhr.readyState==4 &&xhr.status==200){
+                    target.innerHTML=xhr.responseText
+                }
+            }
+
+        }
+
+    </script>
+</body>
+</html>
