@@ -1,0 +1,52 @@
+<!DOCTYPE>
+<html>
+<head>
+    <style>
+
+        #left,#right,#drag{ height:300px; position:absolute;}
+        #left{width:300px; background:#ccc;}
+        #drag{ width:9px; background:#666;left:300px;}
+        #right{right:0; background:#ccc; left:309px; width:auto;}
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>左右两栏拖动改变宽度</title>
+</head>
+<body>
+<div id="left">左侧内容</div>
+<div id="drag"></div>
+<div id="right">
+    右侧内容
+</div>
+<script>
+    function $(id) {
+        return document.getElementById(id)
+    }
+    window.onload = function() {
+        left = $("left"), right = $("right"), drag = $("drag");
+        var dragWidth=9;
+        drag.onmousedown = function(e) {
+            var disX = (e || event).clientX;
+            drag.left = drag.offsetLeft;
+            document.onmousemove = function(e) {
+                var iT = drag.left + ((e || event).clientX - disX);
+                var e=e||window.event,tarnameb=e.target||e.srcElement;
+                maxT=document.body.clientWidth;
+                iT < 0 && (iT = 0);
+                iT > maxT && (iT = maxT);
+                drag.style.left = left.style.width = iT + "px";
+                right.style.width = document.body.clientWidth - iT -dragWidth + "px";
+                right.style.left = iT+dragWidth+"px";
+                return false
+            };
+            document.onmouseup = function() {
+                document.onmousemove = null;
+                document.onmouseup = null;
+                drag.releaseCapture && drag.releaseCapture()
+            };
+            drag.setCapture && drag.setCapture();
+            return false
+        };
+    };
+</script>
+</body>
+</html>
