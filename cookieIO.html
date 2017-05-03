@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cookie i/o</title>
+</head>
+<body>
+
+</body>
+<script>
+    function createcookie(name,value,days){
+        if(days){
+            var date=new Date();
+            date.setTime(date.getTime()+days*3600*1000*24)
+            expire="expires="+date;
+        }
+        else{
+            expire=""
+        }
+        document.cookie=name+"="+value+"path=/;"+expire;
+
+    }
+    function readcookie(name){
+        var nameEQ=name+"=";
+        var ca=document.cookie.split(";");
+        for(var i=0;i<ca.length;i++){
+            var t=ca[i].trim()
+            if(t.indexOf(nameEQ)==0)return t.substring(nameEQ.length,t.length);
+
+        }
+        return null
+    }
+    function eraseitem(name) {
+        createcookie(name,"",-1)
+
+    }
+</script>
+</html>

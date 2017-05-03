@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fae573f-8774-4766-9b24-cfd47b5980b0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ali.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tyest.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cookieIO.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -68,6 +67,8 @@
         <option value="$PROJECT_DIR$/ajaxcall.html" />
         <option value="$PROJECT_DIR$/ali.html" />
         <option value="$PROJECT_DIR$/tyest.html" />
+        <option value="$PROJECT_DIR$/jqueryLoad1.html" />
+        <option value="$PROJECT_DIR$/cookieIO.html" />
       </list>
     </option>
   </component>
@@ -225,11 +226,13 @@
       <workItem from="1492834146136" duration="4630000" />
       <workItem from="1493033424077" duration="2090000" />
       <workItem from="1493431533413" duration="2000" />
+      <workItem from="1493612393534" duration="866000" />
+      <workItem from="1493770218480" duration="1356000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30414000" />
+    <option name="totallyTimeSpent" value="32636000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -415,13 +418,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/position.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/事件流.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -521,6 +517,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
           <caret line="38" column="14" lean-forward="false" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/position.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jqueryLoad1.html" />
+    <entry file="file://$PROJECT_DIR$/cookieIO.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="31" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
