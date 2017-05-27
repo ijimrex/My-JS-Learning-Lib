@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	var array = ['啊', '被', '次', '的'];
+array = array.sort(
+    function compareFunction(p1, p2) {
+        return p1.localeCompare(p2);
+    }
+);
+l=""
+for (var i=0;i<array.length;i++){
+	l+=array[i]+" "
+
+}
+document.write(l)
+</script>
+	<title>chinese sort</title>
+</head>
+<body>
+
+
+</body>
+</html>
